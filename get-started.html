@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complete Your Application – ResiLink</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" 
+href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2317c1ff'/%3E%3Cstop offset='100%25' stop-color='%234be0b9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23grad)'/%3E%3Cpath d='M50 20 L20 45 V80 H40 V60 H60 V80 H80 V45 Z' fill='white'/%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --bg: #141a22;              /* slightly lighter */
+      --text: #f2f6fb;            /* brighter text */
+      --muted: #b7c6d8;           /* lighter muted text */
+      --accent1: #17c1ff;
+      --accent2: #4be0b9;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    body {
+      background: radial-gradient(1200px 800px at 50% -10%, rgba(23, 193, 255, 0.18), transparent 70%),
+                  linear-gradient(160deg, #1c2530 0%, #141a22 100%);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.1;
+      background: linear-gradient(90deg, var(--accent1), #009dff 48%, var(--accent2));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .steps {
+      margin: 40px auto;
+      max-width: 720px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    .steps li { margin-bottom: 14px; }
+    .steps strong { color: var(--accent1); }
+
+    .action-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .action-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(6px);
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease;
+    }
+    .action-card:hover { transform: translateY(-3px); }
+    .action-card svg {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 14px;
+    }
+
+    .cta, .cta-small {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #5ed6ff, #2fb6ff);
+      color: #031420;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(23, 193, 255, 0.45);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .cta:hover, .cta-small:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(23, 193, 255, 0.55);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <svg viewBox="0 0 24 24"><path d="M12 3 3 9v12h6v-6h6v6h6V9l-9-6Z" fill="currentColor"/></svg>
+      </div>
+      <div class="brand">ResiLink</div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Complete Your Application</h1>
+      <p>It only takes 3 simple steps to get started with ResiLink.</p>
+      <a class="cta" href="form.pdf" download>📄 Download Form</a>
+    </section>
+
+    <!-- Step-by-step guidance -->
+    <ol class="steps">
+      <li><strong>Download</strong> the application form by clicking the button above.</li>
+      <li><strong>Fill in</strong> your details directly in the PDF or print & write by hand.</li>
+      <li><strong>Send it back</strong> to us using WhatsApp or Email — whichever is easiest for you.</li>
+    </ol>
+
+    <!-- Action cards -->
+    <section class="action-grid">
+      <!-- WhatsApp -->
+      <article class="action-card">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 32 32">
+          <path d="M16.027 3C9.382 3 4 8.268 4 14.803c0 2.61.836 5.027 2.262 7.0L4 29l7.385-2.192c1.894 1.033 4.064 1.63 6.642 1.63 6.645 0 12.027-5.268 12.027-11.803C30.054 8.268 22.672 3 16.027 3zm0 20.482c-2.068 0-3.947-.61-5.541-1.66l-.396-.248-4.387 1.299 1.307-4.273-.262-.414c-1.08-1.652-1.656-3.566-1.656-5.385 0-5.164 4.236-9.363 9.935-9.363 5.672 0 9.936 4.2 9.936 9.363 0 5.163-4.264 9.363-9.936 9.363z"/>
+        </svg>
+        <h3>Send via WhatsApp</h3>
+        <p>Quickest way to send us your form. Tap below to open chat.</p>
+        <a class="cta-small" href="https://wa.me/14158138583" target="_blank">📱 +1 (415) 813-8583</a>
+      </article>
+
+      <!-- Email -->
+      <article class="action-card">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24">
+          <path d="M4 4h16v16H4z" fill="none"/>
+          <path d="M4 4h16v16H4z" stroke="white" stroke-width="2"/>
+          <path d="M4 4l8 8 8-8" stroke="white" stroke-width="2"/>
+        </svg>
+        <h3>Send via Email</h3>
+        <p>Prefer email? Send your filled form as an attachment to us.</p>
+        <a class="cta-small" href="mailto:resilink@icloud.com">✉ resilink@icloud.com</a>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      © <span id="year"></span> ResiLink. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
